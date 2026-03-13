@@ -136,7 +136,6 @@ body {
 .card img {
     width: 100%;
     height: auto;
-
 }
 
 .card h3 {
@@ -156,7 +155,6 @@ body {
     align-items: center;
     gap: 20px;
 }
-
 
 .social-media-links {
     display: flex;
@@ -384,10 +382,4 @@ footer {
     .producto-precio {
         font-size: 1.3em; /* Reducir tamaño de la fuente del precio */
     }
-
 }
-
-
-
-
-
