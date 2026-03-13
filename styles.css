@@ -158,7 +158,7 @@ body {
 }
 
 .contact-image {
-    width: 200px; /* Ajusta el tamaño de la imagen */
+    width: 90px; /* Ajusta el tamaño de la imagen */
     height: auto;
     object-fit: cover;
 }
@@ -391,4 +391,5 @@ footer {
     }
 
 }
+
 
