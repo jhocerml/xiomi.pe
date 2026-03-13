@@ -157,16 +157,11 @@ body {
     gap: 20px;
 }
 
-.contact-image {
-    width: 80px; /* Ajusta el tamaño de la imagen */
-    height: auto;
-    object-fit: cover;
-}
 
 .social-media-links {
     display: flex;
     justify-content: flex-start; /* Los íconos alineados con la mano del personaje */
-    gap: 20px;
+    gap: 40px;
 }
 
 .social-media-links a {
@@ -391,6 +386,7 @@ footer {
     }
 
 }
+
 
 
 
