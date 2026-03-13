@@ -1,0 +1,386 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #000;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+/* Página de bienvenida-Hero Section */
+.hero-section h1 {
+    font-size: 8vw; /* Usamos un valor relativo */
+    margin-bottom: 2rem;
+    color: #231203;
+}
+
+.hero-section p {
+    font-size: 4vw; /* Ajustamos el tamaño con respecto al ancho de la pantalla */
+    margin-bottom: 2rem;
+    color: #0b0b09;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 6vw; /* Ajustamos el tamaño del título en pantallas pequeñas */
+    }
+
+    .hero-section p {
+        font-size: 5vw; /* Ajustamos el tamaño del párrafo en pantallas pequeñas */
+    }
+
+    .btn-primary {
+        font-size: 5vw; /* Ajustamos el tamaño del botón */
+        padding: 1rem 2rem; /* Reducimos el padding para móviles */
+    }
+}
+
+/* Media query para pantallas más pequeñas (por ejemplo, teléfonos) */
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 5vw; /* Ajustamos aún más el tamaño en pantallas más pequeñas */
+    }
+
+    .hero-section p {
+        font-size: 4.5vw; /* Ajustamos el tamaño del párrafo en pantallas muy pequeñas */
+    }
+}
+
+/* Sección de tarjetas */
+.cards-container {
+    padding: 3rem;
+    background: #f9f9f9;
+}
+
+.cards-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    color: rgb(14, 14, 14);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+
+}
+
+.card h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    padding: 0 1rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Sección de redes sociales */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-image {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    object-fit: cover;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: flex-start; /* Los íconos alineados con la mano del personaje */
+    gap: 20px;
+}
+
+.social-media-links a {
+    display: block;
+    font-size: 70px;
+    text-decoration: none;
+}
+
+.social-media-links a.whatsapp {
+    color: #25D366;
+}
+
+.social-media-links a.instagram {
+    color: #E4405F;
+}
+
+.social-media-links a.facebook {
+    color: #1877F2;
+}
+
+.social-media-links a.tiktok {
+    color: #000;
+}
+
+/* Sección acerca de nosotros */
+.about-section {
+    padding: 3rem;
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+.about-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.about-section p {
+    font-size: 1.3rem;
+}
+
+/* Pie de página */
+footer {
+    padding: 1.5rem;
+    background: #000;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+        background: #000;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 1rem;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+.hero-section {
+    background-image: url("fondo333.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    z-index: 1;
+    height: 100vh; /* 100% de la altura de la pantalla */
+}
+
+.hero-section h1 {
+    font-family: 'Playfair Display', serif; /* Fuente elegante */
+    font-size: 4em; /* Tamaño grande para el título */
+    font-weight: 700; /* Peso de fuente más fuerte */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+    margin: 0; /* Sin márgenes extra */
+    padding: 0;
+}
+
+.hero-section p {
+    font-family: 'Roboto', sans-serif; /* Fuente limpia para el párrafo */
+    font-size: 1.2em; /* Tamaño de fuente cómodo para lectura */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra en el texto para mayor contraste */
+}
+
+.hero-section a {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.1em;
+    padding: 10px 20px;
+    background-color: #f5a507; /* Un color llamativo para el botón */
+    color: white;
+    text-decoration: none;
+    border-radius: 80px;
+    box-shadow: 0 4px 8px rgba(14, 14, 14, 0.3); /* Sombra para el botón */
+}
+
+.hero-section a:hover {
+    background-color: #211b1a; /* Color más oscuro cuando se pasa el mouse */
+}
+
+/* Estilos generales para el contenedor de productos */
+.productos-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.productos-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas por defecto */
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Estilo para los productos */
+.producto-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.producto-info {
+    padding: 15px;
+}
+
+.producto-precio {
+    font-size: 1.5em;
+    color: #FF6347;
+    font-weight: bold;
+}
+
+/* Estilo para el botón */
+.producto-card .btn {
+    background-color: #FF7F50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en los productos */
+.producto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.producto-card .btn:hover {
+    background-color: #FF6347;
+}
+
+/* Media query para dispositivos más pequeños (por ejemplo, tablets) */
+@media (max-width: 1024px) {
+    .productos {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas para pantallas más pequeñas */
+    }
+}
+
+/* Media query para pantallas de teléfono (móviles) */
+@media (max-width: 768px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para teléfonos móviles */
+        padding: 0 10px; /* Reducir el padding */
+    }
+
+    .producto-card {
+        margin-bottom: 20px; /* Separar un poco más las tarjetas */
+    }
+}
+
+/* Media query para pantallas muy pequeñas (por ejemplo, teléfonos muy pequeños) */
+@media (max-width: 480px) {
+    .productos {
+        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+        padding: 0 5px; /* Reducir más el padding */
+    }
+
+    .producto-card img {
+        height: 180px; /* Reducir el tamaño de las imágenes para que no ocupen demasiado espacio */
+    }
+
+    .producto-precio {
+        font-size: 1.3em; /* Reducir tamaño de la fuente del precio */
+    }
+}

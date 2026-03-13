@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- Agregar Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Mi página web</title>
+</head>       
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Golden step</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#catalogo">CATÁLOGO</a></li>
+            <li><a href="#acerca">ACERCA DE NOSOTROS</a></li>
+        </ul>
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <header id="inicio" class="hero-section">
+        <h1>Bienvenido a Nuestra Página Web</h1>
+        <p>Descubre nuestros servicios y más</p>
+        <a href="#servicios" class="btn-primary">Descubrir más</a>
+    </header>
+
+    <main>
+       <section id="servicios" class="productos-container">
+         <section id="catalogo" class="productos-container"></section>
+           <h2>CATÁLOGO</h2>
+        <div class="productos">
+            <div class="producto-card">
+                <img src="12.jpeg" alt="Zapato 1">
+            
+            </div>
+            <div class="producto-card">
+               <img src="7.jpeg" alt="Zapato 2">
+            </div>
+            <div class="producto-card">
+                <img src="444.jpeg" alt="Zapato 3">
+            </div>
+        </div>
+
+        <section id="contacto">
+            <h2>CONTACTOS</h2>
+            <p>Para obtener más información específica, síguenos en nuestras plataformas sociales y comunícate con nosotros directamente.</p>
+            <div class="contact-container">
+                <!-- Imagen a la izquierda -->
+                <img src="12.png" alt="Personaje señalando" class="contact-image">
+                <!-- Íconos de redes sociales -->
+                <div class="social-media-links">
+                    <a href="https://wa.me/tu_numero" target="_blank" class="whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/goldenstep.pe" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@goldenstep.pe" target="_blank" class="tiktok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.facebook.com/goldenstepoficial" target="_blank" class="facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="acerca" class="about-section">
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos tu tienda en línea donde podrás encontrar calzado que te aporte estilo y elegancia. También disponemos de una tienda física. Para más información, contacta con nosotros a través de nuestras redes sociales, que están a tu alcance, así como por WhatsApp, donde nuestro equipo de atención al cliente estará dispuesto a asistirte. ¡Realizamos envíos a todo el país!</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026. Todos los derechos reservados.</p>
+    </footer>
+     <script src="app.js"></script>
+</body>
+</html>
